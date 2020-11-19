@@ -1,0 +1,12 @@
+.card {
+  height: '450px';
+  width: '100%';
+  margin: '30px';
+}
+@media (min-width: 960px){
+  .card {
+    height: '550px';
+    width: '100%';
+    margin: '30px';
+  }
+}

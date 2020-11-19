@@ -1,0 +1,76 @@
+.slider {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: white;
+}
+@media (min-width: 750px) {
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: white;
+  }
+}
+
+.slide {
+  position: relative;
+  min-width: 100%;
+  height: 80%; 
+  transition: 0.5s;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.img{
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+.div{
+  height: 20%;
+}
+
+%btn-styles{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10%;
+  height: 80%;
+  background: none;  
+  border: none;
+  outline: none;
+  transition: .5s;
+  &:hover{
+    background: rgba(0, 0, 0, 0.322);
+    cursor: pointer;
+    i{
+      font-size: 2vw;
+      color: rgb(147, 147, 147);
+    }
+  }
+}
+
+#goLeft{
+ left: 0;
+ @extend %btn-styles;
+}
+
+#goRight {
+ right: 0;
+ @extend %btn-styles;
+}
